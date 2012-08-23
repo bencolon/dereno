@@ -31,7 +31,7 @@ module Dereno
 private
 
   def self.subject
-    "[DEPLOY] #{app} (branch #{branch} deployed to #{stage})"
+    @cap.dereno_options[:subject] || "[DEPLOY] #{app} (branch #{branch} deployed to #{stage})"
   end
 
   def self.body
