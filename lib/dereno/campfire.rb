@@ -18,7 +18,7 @@ module Dereno
     end
 
     def self.enabled?
-      token.present?
+      token && !token.empty?
     end
 
     # Deployment release notes notification in a Campfire room

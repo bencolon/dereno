@@ -18,7 +18,7 @@ module Dereno
     end
 
     def self.enabled?
-      token.present?
+      token && !token.empty?
     end
 
     # Return the stories included in the commits list

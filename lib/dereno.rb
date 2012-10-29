@@ -2,7 +2,7 @@
 
 [
  'tmpdir',
- 'active_support/core_ext',
+ 'active_support/core_ext/object/try',
  'capistrano', 'capistrano/release_notes',
  'dereno/version', 'dereno/git', 'dereno/pivotal', 'dereno/campfire'
 ].each { |f| require f }
